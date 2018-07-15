@@ -1,0 +1,159 @@
+
+/* Styling for HTML elements */
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 18px;
+    line-height: 150%;
+    color: #333;
+    background: purple;
+  }
+  
+  header {
+    background: white;
+  }
+  #navcolor a {
+      color: slategrey;
+  }
+  #navactive {
+    color: purple
+  }
+  li.dropdown.open > ul > li.active > a {
+    background: purple;
+  }
+
+  #Brand{
+    padding: 20px;
+    margin-left: 10px;
+    font-size: 48px;
+    background: purple;
+    color: white;
+    text-align: center;
+    font-size: xx-large;
+  }
+
+  /* Selecting elements by ID */
+  .summary,
+  .summary img {
+    float: left;
+  }
+
+  .summary {
+    /* width: 90%; */
+    background: white;
+    padding: 10px;
+    /* margin-left: 1%; */
+    margin-top: 30px;
+    margin-left: 30px;
+  }
+
+  .summary h1 {
+    color: purple;
+    background: white;
+  }
+  
+  #summary img {
+    display: block;
+    width: 200px;
+    height: 200px;
+    margin-right: 15px;
+    background: white;
+  }
+  
+  .viz {
+    /* position: relative; */
+    background: white;
+    padding: 10px;
+    margin-top:30px;
+    margin-left: 30px;
+  }
+  .viz img {
+    width: 130px;
+    height: 130px;
+    /* margin-right: 15px; */
+  }
+
+  .viz h3 {
+    color: purple;
+    text-align: center;
+  }
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0 4px;
+  background: white;
+}
+
+.column img {
+  display: block;
+  /* margin-top: 10px; */
+  margin-left: auto;
+  margin-right: auto;
+  background: white;
+
+}
+.column h3 {
+  text-align: center;
+  color: purple;
+}
+
+.column h1 {
+  text-align: center;
+  font-style: bold;
+  color: purple;
+  padding: 15px;
+
+}
+#background {
+  /* display: block;
+  /* margin-top: 10px; */
+  /* margin-left: auto;
+  margin-right: auto; */
+  background: white;
+}
+
+#background h1 {
+  color: purple;
+  background: white;
+}
+
+#active a {
+  color: white;
+}
+
+.main_viz {
+  background: white;
+  padding: 10px;
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+.main_viz p {
+  text-justify: inter-word;
+}
+
+.main_viz h1 {
+  text-align: center;
+  color: purple;
+
+}
+
+.main_viz img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+
+}
+.table {
+  background: white;
+  
+}

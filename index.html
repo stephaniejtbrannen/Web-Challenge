@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!--A <meta> viewport element gives the browser instructions on how to control the page's dimensions and scaling.-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Latitude</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="https://bootswatch.com/4/pulse/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="style.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <!-- Navbar taken from bootstrap website -->
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                    aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <h1>
+                    <a id="Brand" class="navbar-brand" href="#">Latitude</a>
+                </h1>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="max_temperature.html">Max Temperature</a>
+                            </li>
+                            <li>
+                                <a href="cloudiness.html">Cloudiness</a>
+                            </li>
+                            <li>
+                                <a href="wind_speed.html">Wind Speed</a>
+                            </li>
+                            <li>
+                                <a href="humidity.html">Humidity</a>
+                            </li>
+                        </ul>
+                        <li>
+                            <a href="comparison.html">Comparision</a>
+                        </li>
+                        <li>
+                            <a href="data.html">Data</a>
+                        </li>
+                    </li>
+                </ul>
+            </div>
+            <!-- added breadcrumbs to show current page -->
+            <nav aria-label="breadcrumb">
+                <h6>
+                    <ol class="breadcrumb">
+                        <li id="navactive" class="breadcrumb-item">Home</li>
+                    </ol>
+                    <h6>
+            </nav>
+        </div>
+    </nav>
+    <div class="container">
+        <!-- class alters the grid appearence with screen size -->
+        <!-- added css class summary for background color and other formatting -- >
+        <div class="col-md-7 col-sm-12 summary">
+            <section>
+                <h1>Summary: Latitude vs X</h1>
+                <hr>
+                <img src="City_Latitude_v_Max_Temperature.png" alt="City Latitude vs Temperature">
+                <p>The purpose of this project was to analyze how weather changes as you get closer to the equator (0 degrees
+                    latitude). To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble
+                    a dataset on over 500 cities.</br>
+                    </br>
+
+                    After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs latitude. Factors we looked at
+                    included: temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualizations
+                    created as a part of then analysis, as well as explanations and descriptions of any trends and correlations
+                    witnessed.
+                </p>
+            </section>
+        </div>
+         <!-- class alters the grid appearence with screen size -->
+         <!-- added css class summary for background color and other formatting -- >
+        <div class="col-md-4 col-xs-12 viz" align="center">
+            <section>
+                <h3>Visualizations</h3>
+                <div class="container-fluid">
+
+                    <a href="max_temperature.html">
+                        <img src="City_Latitude_v_Max_Temperature.png" alt="City Latitude vs Temperature">
+                    </a>
+
+                    <a href="cloudiness.html">
+                        <img src="City_Latitude_v_Cloudiness.png" alt="City Latitude vs Cloudiness">
+                    </a>
+
+                    <a href="wind_speed.html">
+                        <img src="City_Latitude_v_Wind_Speed.png" alt="City Latitude vs Wind Speed">
+                    </a>
+
+                    <a href="humidity.html">
+                        <img src="City_Latitude_v_Humidity.png" alt="City Latitude vs Humidity">
+                    </a>
+
+                </div>
+            </section>
+        </div>
+        
+    </div>
+    </div>
+</body>
+
+</html>

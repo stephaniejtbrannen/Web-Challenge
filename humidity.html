@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Latitude</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                    aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <h1>
+                    <a id="Brand" class="navbar-brand" href="#">Latitude</a>
+                </h1>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="max_temperature.html">Max Temperature</a>
+                            </li>
+                            <li>
+                                <a href="cloudiness.html">Cloudiness</a>
+                            </li>
+                            <li>
+                                <a href="wind_speed.html">Wind Speed</a>
+                            </li>
+                            <li class="active">
+                                <a href="humidity.html">Humidity</a>
+                            </li>
+                        </ul>
+                        <li>
+                            <a href="comparison.html">Comparision</a>
+                        </li>
+                        <li>
+                            <a href="data.html">Data</a>
+                        </li>
+                    </li>
+                </ul>
+            </div>
+            <nav aria-label="breadcrumb">
+                <h6>
+                    <ol class="breadcrumb">
+                        <li id="navcolor" class="breadcrumb-item">
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li id="navactive" class="breadcrumb-item active" aria-current="page">Humidity</li>
+                    </ol>
+                    <h6>
+            </nav>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+    <div class="container">
+        <!-- <div class="row"> -->
+        <div class="col-md-7 col-sm-12 main_viz">
+            <!-- <section> -->
+            <h1>Latitude vs. Humidity</h1>
+            <hr>
+            <img src="City_Latitude_v_Humidity.png" alt="City Latitude vs Humidity">
+            <p>The latitude as the cities approach the equator do not seem to have any affect on
+                 the humdity. However, humidity seems unually high for all cities. THis may be 
+                 something to research in future studies. 
+            </p>
+        </div>
+        <!-- </section> -->
+
+        <div class="col-md-4 col-xs-12 viz" align="center">
+                <section>
+                    <h3>Visualizations</h3>
+                     <div class="container-fluid">
+                        <!-- <div class="row"> -->
+                            <!-- <div class="col-md-6 col-sm-3"> -->
+                                <a href="max_temperature.html">
+                                    <img src="City_Latitude_v_Max_Temperature.png" alt="City Latitude vs Temperature">
+                                </a>
+                            <!-- </div> -->
+                            <!-- <div class="col-md-6 col-sm-3"> -->
+                                <a href="cloudiness.html">
+                                    <img src="City_Latitude_v_Cloudiness.png" alt="City Latitude vs Cloudiness">
+                                </a>
+                            <!-- </div> -->
+                            <!-- <div class="col-md-6 col-sm-3"> -->
+                                <a href="wind_speed.html">
+                                    <img src="City_Latitude_v_Wind_Speed.png" alt="City Latitude vs Wind Speed">
+                                </a>
+                            <!-- </div> -->
+                            <!-- <div class="col-md-6 col-sm-3"> -->
+                                <a href="humidity.html">
+                                    <img src="City_Latitude_v_Humidity.png" alt="City Latitude vs Humidity">
+                                </a>
+                            <!-- </div> -->
+                        </div>
+                    </div>
+                </section>
+            </div>
+        <!-- </div> -->
+    </div>
+</body>
+
+</html>
